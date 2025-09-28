@@ -1,3 +1,3 @@
-export type PostsPageProps = {
-	searchParams: { [key: string]: string | string[] | undefined }
+export type SearchParams = {
+	searchParams?: { [key: string]: string | string[] | undefined }
 }

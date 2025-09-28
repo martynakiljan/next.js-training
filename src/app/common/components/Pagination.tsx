@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import style from './pagination.module.scss'
+
 type PaginationType = {
 	page: number
 	total: number
