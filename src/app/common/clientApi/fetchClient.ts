@@ -1,4 +1,3 @@
-
 import { notFound } from 'next/dist/client/components/not-found'
 
 type FetchClinetOptions = {
@@ -19,4 +18,19 @@ export async function fetchClient<P = unknown>(url: string, options: FetchClinet
 
 	const post: P = await response.json()
 	return post
+}
+
+export async function updateClient(method: 'POST' | 'PATCH', url: string, data: unknown) {
+	const res = await fetch(url, {
+		method: method,
+		body: JSON.stringify(data),
+		headers: {
+			Accept: 'application/json',
+			'Content-Type': 'appllication/json',
+		},
+	})
+
+	if (!res.ok) {
+		throw new Error(`problem with update data, status code: ${res.status}`)
+	}
 }

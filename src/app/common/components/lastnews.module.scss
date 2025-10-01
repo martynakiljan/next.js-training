@@ -1,0 +1,31 @@
+.lastnews {
+	color: black;
+	margin: 50px 0;
+	border: 1px solid lightseagreen;
+	padding: 50px;
+}
+
+.lastnewsLink {
+	color: black;
+	margin: 20px 0;
+}
+
+.container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 50px;
+}
+
+.nextButton {
+	color: black;
+	text-decoration: none;
+	background: lightseagreen;
+	color: white;
+	text-transform: uppercase;
+	border-radius: 3px;
+	border: none;
+	display: inline;
+	height: 100px;
+	width: auto;
+}
